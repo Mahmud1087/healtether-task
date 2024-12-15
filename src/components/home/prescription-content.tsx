@@ -1,5 +1,7 @@
 import { Button, Checkbox, Flex, Form, FormProps, Input } from 'antd';
 import { CAMERA_ICON, PLUS_ICON } from '../../config';
+import Time from './time';
+import ApplicableDays from './applicable-days';
 
 type FieldType = {
   doctorName?: string;
@@ -144,9 +146,17 @@ const PrescriptionContent = () => {
         </footer>
 
         <section className='mt-4'>
-          <h1 className='text-sm font-poppins font-bold mb-6'>
+          <h1 className='text-sm font-poppins font-bold mb-3'>
             Clinic open hrs
           </h1>
+          <p className='text-xs font-poppins font-bold mb-6'>Time</p>
+          <Flex vertical gap={10}>
+            <Time title='Start time' />
+            <Time title='End time' />
+            <div className='mt-2'>
+              <ApplicableDays />
+            </div>
+          </Flex>
         </section>
 
         <section className='my-4'>
