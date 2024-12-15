@@ -1,2 +1,10 @@
 export { default as DesktopSidebar } from './sidebar/desktop-sidebar';
+export { default as DesktopNavbar } from './navbar/desktop-navbar';
 export { default as MobileSidebar } from './sidebar/mobile-sidebar';
+export { default as MobileNavbar } from './navbar/mobile-navbar';
+export { default as Logo } from './common/logo';
+export { default as Searchbar } from './navbar/searchbar';
+export { default as UserButton } from './navbar/user-button';
+export { default as UserProfile } from './home/user-profile';
+export { default as PrescriptionPreview } from './home/prescription-preview';
+export { default as PrescriptionContent } from './home/prescription-content';

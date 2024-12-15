@@ -1,10 +1,12 @@
-import { AppContainer } from './containers';
+import { ConfigProvider } from 'antd';
+import AppRoutes from './app-routes';
+import theme from './config/theme';
 
 const App = () => {
   return (
-    <div>
-      <AppContainer />
-    </div>
+    <ConfigProvider theme={theme({ themeValue: 'light' })}>
+      <AppRoutes />
+    </ConfigProvider>
   );
 };
 export default App;

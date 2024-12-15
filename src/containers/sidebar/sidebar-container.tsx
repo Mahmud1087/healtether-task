@@ -1,13 +1,10 @@
-import { DesktopSidebar, MobileSidebar } from '../../components';
+import { DesktopSidebar } from '../../components';
 
 const SidebarContainer = () => {
   return (
-    <div>
+    <div className='relative z-50'>
       <aside className='hidden lg:block'>
         <DesktopSidebar />
-      </aside>
-      <aside className='lg:hidden'>
-        <MobileSidebar />
       </aside>
     </div>
   );
