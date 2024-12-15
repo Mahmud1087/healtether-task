@@ -14,14 +14,6 @@ const StartTime = ({ title }: StartTimeProperties) => {
       <Flex gap={10} className='w-full flex-wrap md:w-3/4'>
         <div className='flex items-center px-4 h-12 bg-[#F8F8F8]'>
           <input
-            type='number'
-            placeholder='00'
-            className='placeholder:font-roboto font-roboto border-none focus:outline-none w-9 bg-transparent text-base'
-          />
-          <p className='text-sm font-semibold'>hrs</p>
-        </div>
-        <div className='flex items-center px-4 h-12 bg-[#F8F8F8]'>
-          <input
             placeholder='00'
             className='placeholder:font-roboto font-roboto border-none focus:outline-none w-9 bg-transparent text-base'
           />
