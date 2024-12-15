@@ -19,7 +19,7 @@ const UserProfile = () => {
   const [activebtn, setActivebtn] = useState('Prescription Settings');
 
   return (
-    <div className='flex flex-col mt-5 lg:flex-row lg:gap-6'>
+    <div className='flex flex-col mt-5 md:flex-row lg:gap-6'>
       <section className='w-full border-t border-l py-11 md:w-1/2'>
         <Flex
           align='center'
